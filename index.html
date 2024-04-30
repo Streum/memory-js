@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/app.js" defer></script>
     <title>Accueil</title>
 </head>
 <body>
-    <h1>ENI - MEMORY - Accueil</h1>
-
-    <!-- La nav qui va etre sur toute les pages -->
-    <nav>
-        <ul>
+    <header>
+        <h1>ENI - MEMORY - Accueil</h1>
+        <!-- La nav qui va etre sur toute les pages -->
+        <nav>
             <a href="index.html">Accueil</a>
             <a href="inscription.html">S'inscrire</a>
-            <a href="connexion.html">Se connecter</a> 
+            <a href="connexion.html">Se connecter</a>
             <a href="profil.html">Profil</a>
             <a href="jouer.html">Jouer</a>
-        </ul>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Les règles du jeu -->
-    <div class="espace-centre">
+    <div class="flex-container">
+        <!-- item 1 -->
         <p>Bienvenue sur le site du Memory de L'ENI. <br>
         Venez jouer avec nous et faites le meilleur score possible.</p>
+        <!-- item 2 -->
         <p><b>Règle du jeu :</b></p>
+        <!-- item 3 -->
         <ul>
             <li>Retournez deux cartes. Si les images sont identiques, le jeu laisse les cartes visibles.</li>
             <li>Si les images sont différentes, les cartes se retournent faces cachées là où elles étaient.</li>
             <li>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</li>
         </ul>
-        <img src="ressources/memory-legume/memory_detail.png" alt="jeu fini">
+        <!-- item 4 -->
+        <img class="jeu-de-base" src="ressources/memory-legume/memory_detail.png" alt="jeu fini">
+        <!-- item 5 -->
         <p>Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire. <br>
         Le jeu garde les <b>5 meilleurs</b> scores. <br>
         Si vous voulez relancer une partie appuyer sur <b>la barre d'espace.</b></p>

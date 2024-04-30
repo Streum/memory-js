@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/app.js" defer></script>
     <title>Se connecter</title>
 </head>
 <body>
-    <h1>ENI - MEMORY - Connecter</h1>
-
-    <!-- La nav qui va etre sur toute les pages -->
-    <nav>
-        <ul>
+    <header>
+        <h1>ENI - MEMORY - Connecter</h1>
+        <!-- La nav qui va etre sur toute les pages -->
+        <nav>
             <a href="index.html">Accueil</a>
             <a href="inscription.html">S'inscrire</a>
             <a href="connexion.html">Se connecter</a>
             <a href="profil.html">Profil</a>
             <a href="jouer.html">Jouer</a>
-        </ul>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="espace-centre">
+    <div class="flex-container">
         <form action="" method="post">
             <h2>Connectez-vous.</h2>
             <label for="nom">Nom d'utilisateur</label>
@@ -30,7 +29,9 @@
             <label for="password">Mot de passe</label>
             <input type="password" name="password" placeholder="Votre mot de passe" required />
             <hr>
-            <button type="submit">Se connecter</button><button type="reset">Annuler</button>
+            <div class="button">
+                <button type="submit">Se connecter</button><button type="reset">Annuler</button>
+            </div>
         </form>
     </div>
 </body>
