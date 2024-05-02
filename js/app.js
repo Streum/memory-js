@@ -9,6 +9,7 @@ let premiereCarte;
 let deuxiemeCarte;
 // le verrou sert a pas retourner plus de 2 carte
 let verrou = false;
+let nombreDeCoup;
 
 function retournerCarte() {
     if (verrou) return;
@@ -19,6 +20,7 @@ function retournerCarte() {
     if (!hasCarteFlip) {
         hasCarteFlip = true;
         premiereCarte = this;
+        nombreDeCoup ++;
         return;
     }
 

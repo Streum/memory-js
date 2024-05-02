@@ -29,60 +29,58 @@
         </div>
         <p>Tentez de gagner avec le moins d'essaie possible.</p>
         <p>Appuyez sur la <b>barre d'espace</b> pour relancer une game.</p>
-
         <!-- Afficher le nombre de coup en direct -->
-
-        <div class="jeu">
-            <!-- Grille du jeu -->
-            <div class="grille">
-                <div class="case" data-legume="pomme">
-                    <img class="face-arriere" src="ressources/memory-legume/1.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="pomme">
-                    <img class="face-arriere" src="ressources/memory-legume/1.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="banane">
-                    <img class="face-arriere" src="ressources/memory-legume/2.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="banane">
-                    <img class="face-arriere" src="ressources/memory-legume/2.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="brocoli">
-                    <img class="face-arriere" src="ressources/memory-legume/3.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="brocoli">
-                    <img class="face-arriere" src="ressources/memory-legume/3.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="cerise">
-                    <img class="face-arriere" src="ressources/memory-legume/4.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="cerise">
-                    <img class="face-arriere" src="ressources/memory-legume/4.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="piment">
-                    <img class="face-arriere" src="ressources/memory-legume/5.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="piment">
-                    <img class="face-arriere" src="ressources/memory-legume/5.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="fraise">
-                    <img class="face-arriere" src="ressources/memory-legume/6.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
-                <div class="case" data-legume="fraise">
-                    <img class="face-arriere" src="ressources/memory-legume/6.svg" alt="face visible">
-                    <img class="face-avant" src="ressources/question.svg" alt="face question">
-                </div>
+        <p class="coups">Nombre de coups : ${nombreDeCoup}</p>
+        
+        <!-- Grille du jeu -->
+        <div class="grille">
+            <div class="case" data-legume="pomme">
+                <img class="face-arriere" src="ressources/memory-legume/1.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="pomme">
+                <img class="face-arriere" src="ressources/memory-legume/1.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="banane">
+                <img class="face-arriere" src="ressources/memory-legume/2.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="banane">
+                <img class="face-arriere" src="ressources/memory-legume/2.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="brocoli">
+                <img class="face-arriere" src="ressources/memory-legume/3.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="brocoli">
+                <img class="face-arriere" src="ressources/memory-legume/3.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="cerise">
+                <img class="face-arriere" src="ressources/memory-legume/4.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="cerise">
+                <img class="face-arriere" src="ressources/memory-legume/4.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="piment">
+                <img class="face-arriere" src="ressources/memory-legume/5.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="piment">
+                <img class="face-arriere" src="ressources/memory-legume/5.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="fraise">
+                <img class="face-arriere" src="ressources/memory-legume/6.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
+            </div>
+            <div class="case" data-legume="fraise">
+                <img class="face-arriere" src="ressources/memory-legume/6.svg" alt="face visible">
+                <img class="face-avant" src="ressources/question.svg" alt="face question">
             </div>
         </div>
     </div>
