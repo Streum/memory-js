@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(235deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70%),
-                linear-gradient(125deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70%),
-                linear-gradient(0deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70%);
+        linear-gradient(125deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70%),
+        linear-gradient(0deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70%);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,13 @@ header {
     align-self: stretch;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
 }
 
-nav {display: flex;
+nav {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #212121;
@@ -38,7 +39,10 @@ nav {display: flex;
     width: 50%;
 }
 
-p, li, label, h2 {
+p,
+li,
+label,
+h2 {
     color: aliceblue;
 }
 
@@ -51,74 +55,38 @@ a {
     justify-content: space-around;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+.face-avant,
+.face-arriere,
+.case {
+    /* premet d'enlever tout les expace superflux */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.div1 {
-    grid-area: 1 / 1 / 2 / 2;
+.grille {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid greenyellow; */
 }
 
-.div2 {
-    grid-area: 1 / 2 / 2 / 3;
+.case {
+    /* le calc permet de palier la margin */
+    position: relative;
+    width: calc(25% - 20px);
+    height: calc(200px - 20px);
+    margin: 10px;
 }
 
-.div3 {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.div4 {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.div5 {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.div6 {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
-.div7 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-.div8 {
-    grid-area: 2 / 4 / 3 / 5;
-}
-
-.div9 {
-    grid-area: 3 / 1 / 4 / 2;
-}
-
-.div10 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.div11 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-.div12 {
-    grid-area: 3 / 4 / 4 / 5;
-}
-
-.div13 {
-    grid-area: 4 / 1 / 5 / 2;
-}
-
-.div14 {
-    grid-area: 4 / 2 / 5 / 3;
-}
-
-.div15 {
-    grid-area: 4 / 3 / 5 / 4;
-}
-
-.div16 {
-    grid-area: 4 / 4 / 5 / 5;
+.face-avant,
+.face-arriere {
+    position: absolute;
+    /* permet de mettre les images les une sur les autres */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: aliceblue;
 }
