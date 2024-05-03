@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(235deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70%),
-        linear-gradient(125deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70%),
-        linear-gradient(0deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70%);
+                linear-gradient(125deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70%),
+                linear-gradient(0deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70%);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,6 @@ a {
 }
 
 .face-avant, .face-arriere, .case {
-    /* premet d'enlever tout les expace superflux */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -71,26 +70,21 @@ a {
 }
 
 .case {
-    /* le calc permet de palier la margin */
     position: relative;
     width: calc(25% - 20px);
     height: calc(200px - 20px);
     margin: 10px;
-    /* pour le backface visibility */
     transform-style: preserve-3d;
-    /* tourne la carte sur 1 seconde */
     transition: transform 1s;
 }
 
 .face-avant, .face-arriere {
     position: absolute;
-    /* permet de mettre les images les une sur les autres */
     width: 100%;
     height: 100%;
     padding: 20px;
     border-radius: 5px;
     background-color: aliceblue;
-    /* fait disparaitre la carte */
     backface-visibility: hidden;
 }
 
